@@ -1,7 +1,7 @@
 import commonAPI from "./CommonAPI";
 import { SERVER_URL } from "./SERVERURL";
 
-// Fetch  from DummyJSON
+// Fetch [products] from DummyJSON
 export const fetchProductsAPI = async (limit = 30) => {
   return await commonAPI("GET", `https://dummyjson.com/products?limit=${limit}`);
 };
