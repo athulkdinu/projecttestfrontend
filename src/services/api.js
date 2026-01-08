@@ -14,7 +14,7 @@ export const saveProductAPI = async (reqBody) => {
   });
 };
 
-// Get save products
+// Get saved products
 export const getSavedProductsAPI = async () => {
   const token = localStorage.getItem('token');
   return await commonAPI("GET", `${SERVER_URL}/api/products/saved`, "", {
